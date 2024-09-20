@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Venta de Ropa</title>
+	<link rel="stylesheet" href="pag-estilo.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Hombres</a></li>
+				<li><a href="#">Mujeres</a></li>
+				<li><a href="#">Niños</a></li>
+				<li><a href="#">Carrito (<span id="carrito-cantidad">0</span>)</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="productos">
+			<h2>Productos</h2>
+			<ul id="productos-lista">
+				<!-- Los productos se cargarán aquí mediante JavaScript -->
+			</ul>
+		</section>
+		<section class="carrito">
+			<h2>Carrito</h2>
+			<ul id="carrito-lista">
+				<!-- Los productos del carrito se cargarán aquí mediante JavaScript -->
+			</ul>
+			<p id="carrito-total">Total: $0.00</p>
+			<button id="boton-comprar">Comprar</button>
+		</section>
+	</main>
+	<script src="pagjS.js"></script>
+</body>
+</html>

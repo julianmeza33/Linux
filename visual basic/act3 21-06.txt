@@ -1,0 +1,13 @@
+sub registro()
+    nus = int(dato.cells(1,6))
+    dato.cells(nus,1) = regi.cells(4,4)
+    dato.cells(nus,1) = regi.cells(4,4)
+    dato.cells(nus,1) = regi.cells(4,4)
+    dato.cells(nus,1) = regi.cells(4,4)
+    dato.cells(nus,1) = regi.cells(4,4)
+    msgbox "gardando datos..."
+    nus = int(dato.cells(1,6) + int(1))
+    dato.cells(1,6) = nus
+end sub
+
+        

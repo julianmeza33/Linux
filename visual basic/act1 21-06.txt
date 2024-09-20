@@ -1,0 +1,13 @@
+sub nombre_letra()
+    cant = inpuybox("ingrese la cantidad de nombres")
+    for x = 2 cant + 1
+        nom = cells(x,1)
+        num = len(nom)
+        for z = 1 to num
+            le = mid(nom, z, 1)
+            cells(x,z+1) = le
+        next z
+    next x
+end sub
+
+        

@@ -1,0 +1,13 @@
+sub nombre_letra()
+   nom = cells(1,1)
+   x = cells(1,1)
+   for c = 1 to 15
+        cells(1,c) = nom
+        for v = 1 to 1000000
+        next v
+        cells(1,c) = empty
+    next c
+    cells(1,c) = x
+end sub
+
+        
