@@ -57,7 +57,7 @@ class Recolecta {
   List<Colaborador> generosos(){
     List<Colaborador> generosos = [];
     for (var i = 0; i < _colaboradores.length; i++) {
-      if (_colaboradores[i].getAporte() >= 10000){
+      if (_colaboradores[i].getAporte() >= 150000){
         generosos.add(_colaboradores[i]);
       }
     }
@@ -101,13 +101,13 @@ void main(){
 
   while (!r.finalizada()) {
 
-    print("ingresa nombre:");
+    print("ingrese su nombre:");
     String nombre = stdin.readLineSync()!;
 
-    print("ingresa aporte:");
+    print("cuanto va a aporte:");
     double aporte = double.parse(stdin.readLineSync()!);
 
-    print("ingresa tipo de colaborador (1 o 2):");
+    print("tipo de colaborador (1 o 2):");
     int tipo = int.parse(stdin.readLineSync()!);
 
     Colaborador c = Colaborador(nombre, tipo, aporte);

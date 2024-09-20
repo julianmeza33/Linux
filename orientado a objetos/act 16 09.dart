@@ -14,7 +14,7 @@ class Colaborador{
 }
 
 void main(){
-String code = '{"nombreCompleto": pepe,"tipoColaborador": 1,"aporte":150.0 }';
+String code = '{"nombreCompleto": "pepe","tipoColaborador": 1,"aporte":150.0 }';
   Colaborador colaborador = Colaborador(code);
 
   print(colaborador.nombreCompleto);
