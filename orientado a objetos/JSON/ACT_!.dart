@@ -9,12 +9,21 @@ class User{
   
   User(String m){
     Map<String, dynamic> map = jsonDecode(m);
-    this.userld = map[];
-    this.id = map;
-    this.title = map;
-    this.body = map;
+    this.userld = map['userld'];
+    this.id = map['id'];
+    this.title = map['title'];
+    this.body = map['body'];
     
   }
+
+}
+void main(){
+String code = '{"userld": "pepe", "id": 45, "title": "colaborador","body": "dart"}';
+  User 1m = User(code);
+  print(1m.userld);
+  print(1m.id);
+  print(m1.title)
+  print(1m.body)
 }
 
 void main() async {
