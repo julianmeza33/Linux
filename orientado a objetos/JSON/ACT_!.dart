@@ -1,34 +1,90 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-class User{
-  int? userld;
+class User {
   int? id;
-  String? title;
-  String? body;
-  
-  User(String m){
-    Map<String, dynamic> map = jsonDecode(m);
-    this.userld = map['userld'];
-    this.id = map['id'];
-    this.title = map['title'];
-    this.body = map['body'];
+  String? name;
+  String? username;
+  String? email;
+  String? website;
+  String? phone;
+  Company? company;
+  Address? address;
+
+  User(Map m) {
+    this.id = m['id'];
+    this.name = m['name'];
+    this.username = m['username'];  
+    this.email = m['email'];
+    this.website = m['website'];
+    this.phone = m['phone'];
     
+    Map company = m['company'];
+    this.company = Company(company);
+
+    Map address = m['address'];
+    this.address = Address(address);
+
+  }
+} 
+
+class Company {
+  String? name;
+  String? catchPhrase;
+  String? bs;
+
+  Company(Map m){
+    this.name = m['name'];
+    this.catchPhrase = m['catchPhrase'];
+    this.bs = m['bs'];
+  }
+}
+
+class Address {
+  String? street;
+  String? suite;
+  String? city;
+  String? zipcode;
+  Geo? geo;
+
+  Address(Map m){
+    
+    this.street = m['street'];
+    this.suite = m['suite'];
+    this.city = m['city'];
+    this.zipcode = m['zipcode'];
+    this.geo =  Geo(m['geo']);
+
   }
 
 }
-void main(){
-String code = '{"userld": "pepe", "id": 45, "title": "colaborador","body": "dart"}';
-  User 1m = User(code);
-  print(1m.userld);
-  print(1m.id);
-  print(m1.title)
-  print(1m.body)
+
+class Geo {
+  String? lat;
+  String? lng;
+
+  Geo(Map m){
+    
+    this.lat = m['lat'];
+    this. lng = m['lng'];
+  }
 }
 
-void main() async {
-  var url = Uri.https('jsonplaceholder.typicode.com', '/posts/1');
+void main() async{
+  var url = Uri.https('jsonplaceholder.typicode.com',  '/users/1');
+  print("..........");
   var response = await http.get(url);
   print('Response status: ${response.statusCode}');
   print('Response body: ${response.body}');
+
+  Map<String, dynamic> map = jsonDecode(response.body);
+  User u = User(map);
+  
+  print(u.id);
 }
+
+
+
+
+
+

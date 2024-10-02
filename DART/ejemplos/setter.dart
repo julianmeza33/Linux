@@ -19,5 +19,5 @@ void main() {
 
   // Usar el setter para cambiar el valor del atributo 'modelo'
   miCoche.modelo = 'Honda Civic';
-  print('Modelo actualizado: ${miCoche.modelo}');
+  print('Modelo actualizado: ${miCoche._modelo}');
 }
