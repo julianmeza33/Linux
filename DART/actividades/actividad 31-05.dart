@@ -24,9 +24,9 @@ void main() {
     double prom = (sum / 3); 
 
       if ( prom > 6){
-      print("el estudiante aprobo");
+      print("el estudiante $nb aprobo");
       } else { 
-      print("El estudiante reprobo"); 
+      print("El estudiante $nb reprobo"); 
 
   }
  }
