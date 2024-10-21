@@ -45,11 +45,11 @@ public class Zeta {
     public static void main(String[] args) { 
 
         Publico p = new Publico(920); 
-        pu.ruta = "san toto"; 
+        p.ruta = "san toto"; 
         System.out.println(p.getCodigo()); 
 
         Publico pb = new Publico(450); 
-        pub.ruta = "malambo"; 
+        pb.ruta = "malambo"; 
         System.out.println(pb.getCodigo()); 
 
 
