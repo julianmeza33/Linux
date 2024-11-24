@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>caninos</title>
+    <title>BANCOOP</title>
 </head>
 <style>
     main{
@@ -15,18 +15,38 @@
     header{
         background-color: #8b8b8bf6;
         border-radius: 12px 12px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+
     }
-    .t1{
-        text-align: center;
+    .titulo{
+        flex-direction: column;
     }
-    .t2{
-        text-align: center;
-    }
+    header .t1{
+    margin-top: 0;
+    margin-left:200px;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+    header .t2{
+    margin-left: 200px;
+    font-size: 20px;
+}
+.foto1{
+    width: 125px;
+    height: 100px;
+    border-radius: 12px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
     nav{
         border-radius:0px 0px 12px 12px ;
         background-color: #f3bc07f6;
         text-align: center;
         padding: 10px;
+    }
+    .contenedor{
+        height: 550px;
     }
     a{
         color: black;
@@ -34,78 +54,333 @@
         text-decoration: none;
         font-weight: bold;
     }
+    aside{
+        float: left;
+    }
+    .con1{
+        background-color: rgb(136, 130, 130);
+        border-radius:12px 12px 0px 0px ;
+        margin-top: 10px ;
+        height: 240px;
+        width: 240px;
+    }
+    .con1 h6{
+        border-radius: 12px 12px 0px 0px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 0;
+        background-color: black;
+        color: white;
+        font-weight: bold ;
+        font-size: 12px;
+    }
+    .con1 form{
+    width: 300px;
+    }
+    .con1 .campo{
+        padding: 7px;
+        display: flex;
+        align-items: center;
+    }
+    .con1 .campo label{
+        color: black;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .con1 .campo input{
+        padding: 5px;
+        width: 50%;
+    }
+    .con1 form button{
+        margin-top: 10px;
+        background-color: #f3bc07f6;
+        color: black;
+        border: 2px solid black;
+        padding: 3px;
+        cursor: pointer;
+        margin-left: 30%;
+        border-radius: 5px;
+        font-size: 11px;
+    }
+    .con2{
+        margin-top: 10px ;
+        height: 255px;
+        width: 240px;
+    }
+    .con2 h6{
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+        background-color: black;
+        color: rgb(206, 145, 14);
+        font-weight: bold ;
+        font-size: 12px;
+    }
+    .con2 button{
+        background-color: rgb(26, 25, 25);
+        color: rgb(129, 122, 122);
+        border: 1px solid gray;
+        padding: 8px;
+        width: 100%;
+        cursor: pointer;
+        margin-left: 0%;
+        font-size: 11px;
+    }
+    .Gbloque{
+        margin-top: 20px;
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        float: right;
+    }
+    .bloque1{
+        height: 250px;
+        width: 240px;
+        border-radius: 12px 0px 0px 0px;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bloque1 h1{
+        border-radius: 12px 0px 0px 0px;
+        background-color: black;
+        margin: 10px 0;
+        color: white;
+        width: 220px;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+    }
+    .bloque1 h6{
+ 
+        margin: 10px 0;
+        color: rgb(3, 1, 1);
+        width: 220px;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+    }
+    .foto2{
+    width: 125px;
+    height: 100px;
+    border-radius: 12px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    }
+    .bloque2{
+        border-radius: 0px 12px 0px 0px;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bloque2 h1{
+        border-radius: 0px 12px 0px 0px;
+        background-color: black;
+        margin: 10px 0;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+        width: 220px;
+    }
+    .bloque2 h6{
+        margin: 10px 0;
+        color: rgb(0, 0, 0);
+        width: 220px;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+    }
+    .foto3{
+    width: 125px;
+    height: 100px;
+    border-radius: 12px;
+    margin-right: 15px;
+    margin-top: 20px;
+    }
+    .bloque3{
+        height: 250px;
+        width: 240px;
+        border-radius: 0px 0px 0px 12px;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bloque3 h1{
+        background-color: black;
+        margin: 10px 0;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+        width: 220px;
+    }
+    .bloque3 h6{
+        margin: 10px 0;
+        color: black;
+        width: 220px;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+    }
+    .foto4{
+    width: 125px;
+    height: 100px;
+    border-radius: 12px;
+    margin-right: 15px;
+    margin-top: 20px;
+    }
+    .bloque4{
+        
+        border-radius: 0px 0px 12px 0px;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bloque4 h1{
+        background-color: black;
+        margin: 10px 0;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+        width: 220px;
+    }
+    .bloque4 h6{
+
+        margin: 10px 0;
+        color: black;
+        width: 220px;
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+    }
+    .foto5{
+    width: 125px;
+    height: 100px;
+    border-radius: 12px;
+    margin-right: 15px;
+    margin-top: 20px;
+    }
+    footer{
+    background-color: #000000;
+    border-radius: 0px 0px 12px 12px;
+}
+footer h5{
+    color: gray;
+    text-align: center;
+    padding: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 </style>
 <body>
     <main>
         <header>
-                <h1 class="t1">BANCOOP</h1>
-                <h3 class="t2">caninos y felinos</h3>
-            <img src="fotos/logo.png" alt="fot01 " class="foto1">
+            <div class="titulo">
+                <h3 class="t1">BANCOOP</h3>
+                <h1 class="t2">Te ayuda a alcanzar tu metas</h1>
+            </div>
+            <img src="fotos/deposito.jpg" alt="fot01 " class="foto1">
         </header>       
         <nav>
-            <a href="#">.servicio.</a>
+            <a href="#">.Creditos.</a>
             |
-            <a href="#">.producto.</a>
+            <a href="#">.leasing.</a>
             |
-            <a href="#">.garderia.</a>
+            <a href="#">.ahorros.</a>
             |
-            <a href="#">.promociones.</a>
+            <a href="#">.Servicio al Cliente.</a>
         </nav>
-        <section>
+        <section class="contenedor">
             <aside>
-                <article class="st">solicitar cita</article>
-                <form>
-                    <div class="campo">
-                        <label for="mascota">Mascota:</label>
-                        <input type="text" id="mascota" name="mascota" placeholder="ingresa nombre">
-                    </div>
-                    <div class="campo">
-                        <label for="edad">Edad:</label>
-                        <input type="text" id="edad" name="edad" placeholder="ingresa edad">
-                    </div>
-                    <div class="campo">
-                        <label for="raza">Raza:</label>
-                        <input type="text" id="raza" name="raza" placeholder="ingresa raza">
-                    </div>
-                    <div class="campo">
-                        <label for="fecha">Fecha:</label>
-                        <input type="date" id="edad" name="fecha">
-                    </div>
-                    <div class="campo">
-                        <label for="hora">Hora:</label>
-                        <input type="time" id="hora" name="hora">
-                    </div>
-                    <div class="campo">
-                        <label for="amo">Amo:</label>
-                        <input type="text" id="amo" name="amo" placeholder="ingresa el nombre">
-                    </div>
-                    <button tipe="submit">validar cita</button>
-                </form>
+                <article class="con1">
+                    <h6>INGRESA A TU CUENTA</h6>
+                    <form>
+                        <div class="campo">
+                            <label for="cueta">Cuenta:</label>
+                            <input type="text" id="mascota" name="mascota" placeholder="numero de cuenta">
+                        </div>
+                        <div class="campo">
+                            <label for="tipo">Tipo:</label>
+                            <input type="text" id="tipo" name="tipo">
+                        </div>
+                        <div class="campo">
+                            <label for="clave">Clave:</label>
+                            <input type="text" id="clave" name="clave" placeholder="ingresa clave">
+                        </div>
+                        <button type="submit">INGRESAR</button>
+                    </form>
+                </article>
+                <article class="con2">
+                    <h6>TRANSACCIONES</h6>
+                    <button type="submit">Banca personal</button>
+                    <button type="submit">Banca empresarial</button>
+                    <button type="submit">Banca seguros</button>
+                    <button type="submit">Pago de facturas</button>
+                    <h6>TARJETA DE CREDITO</h6>
+                    <button type="submit">Credi Visa</button>
+                    <button type="submit">Credi Mastercard</button>
+                </article>
             </aside>
-            <article class="ar1">
-                <div class="div1">
-                    <h1>cuidado y educacion para tu perro</h1>
-                    <h6>En nuestro centro, nos compromeremos a brindarte las mejores prarcticas para la educacion y bienestar de tu mascota
-                    .Desde el cuidado basico hasta tecnicas de adiestramiento avanzadas, nuetros profecionales estan aqui para asegurar
-                    que tu mascota reciba el mejor tratamiento posible</h6>
-                </div>
-                <img src="fotos/perro.jpg" alt="fot02 " class="foto2">
-            </article>
-            <article class="ar2">
-                <div class="div2">
-                    <h3>Salir de viaje con su mascota</h3>
-                    <h6>Planificar un viaje con su mascota puede ser emocionante y desafiante a la vez. Es importante cosiderar su seguridad
-                        y bienestar durante el viaje. Desde elegir el trasnporte adecuado hasta empacar sus articulos eseciales
+            <section class="Gbloque">
+                <article class="bloque1">
+                    <h1>solicitar nuestro producto</h1>
+                    <div class="foto2">
+                        <img src="fotos/tarjetacredito.jpg" alt="foto2">
+                    </div>
+                    <h6>Descubre como nuestro producto puede marcar la difercia
+                        para ti. Solicitalo hoy mismo de manera facil y rapida.
+                        Estamos aqui para ofrecerte la calida y el servicio que nesecitas
                     </h6>
-                </div>
-                <img src="fotos/gatos.png" alt="fot03 " class="foto3">
-            </article>
+                </article>
+                <article class="bloque2">
+                    <h1>Ahorro estudiantil</h1>
+                    <div class="foto3">
+                        <img src="fotos/inscripciones.png" alt="foto3">
+                    </div>
+                    <h6>Enpieza a construir tu futuro finaciero solido con nuestras
+                        opciones de ahorro estudialtil. Diseñado especialmente para jovenes, 
+                        estes programa te ayuda a gestionar tus finanzas mientras
+                        alcanzas tus metas academicas</h6>
+                </article>
+                <article class="bloque3">
+                    <h1>Credito vehicular</h1>
+                    <div class="foto4">
+                        <img src="fotos/llave.jpg" alt="foto4">
+                    </div>
+                    <h6>Cumple el sueño de estrenar tu propio vehiculo con nuestras opciones de credito vehicular.
+                        Ofrecemos tasas competitivas plazos flexibles y asesoria personalizada
+                    </h6>
+                </article>
+                <article class="bloque4">
+                    <h1>Credito hipotecario</h1>
+                    <div class="foto5">
+                        <img src="fotos/logo.jpg" alt="foto5">
+                    </div>
+                    <h6>Construye el hogar de tus sueños con nuestro credito hipotecario. 
+                        Te ofresemos tasa accesibles, plazos flexibles y respado que necesitas
+                        para hacer realidad tu proyecto
+                    </h6>
+                </article>
+            </section>
         </section>
         <footer>
-                <h5>contactenos</h5>
-                <h5>Liena grauita 018000-00001</h5>
-                <h5>Correo: pregunta@caninosyfelinos.com</h5>
-        </footer>
+            <h5>contactenos</h5>
+            <h5>Liena grauita 018000-00001</h5>
+            <h5>Banco entidad finaciera - Todos los derechos reservados</h5>
+    </footer>
     </main>
 </body>
 </html>
