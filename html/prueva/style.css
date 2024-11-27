@@ -1,0 +1,29 @@
+main{
+    height: auto;
+    width: 400px;
+    margin: auto;
+    border: 2px solid ;
+    margin-top: 0;
+    border-radius: 10px;
+}
+header{
+    border-radius: 10px 10px 0px 0px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid;
+    background-color: gray;
+}
+table{
+    border: 1px solid;
+}
+th{
+    border-radius: 4px;
+    width: 200px;
+    border: 1px solid;
+}
+td{
+    border-radius: 4px;
+    width: 400px;
+    border: 1px solid;
+}
+
