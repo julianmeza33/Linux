@@ -1,7 +1,14 @@
 void main(){
+  int a = 1;
+  if ( a == 1){
   Logistica l = Logcarro();
   Transporte t = l.crearTransporte();
   t.deliveri();
+  }else if (a == 2) {
+  Logistica l = Logbarco();
+  Transporte t = l.crearTransporte();
+  t.deliveri();
+  }
 }
 
 abstract class Logistica{
