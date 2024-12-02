@@ -14,13 +14,13 @@ header{
 .titulo{
     flex-direction: column;
 }
-header .t1{
+header h3{
 margin-top: 0;
 margin-left:200px;
 font-size: 50px;
 margin-bottom: 0;
 }
-header .t2{
+header h1{
 margin-left: 200px;
 font-size: 20px;
 }

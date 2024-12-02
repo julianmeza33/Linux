@@ -11,13 +11,13 @@ header{
     display: flex;
     justify-content: space-between;
 }
-header .t1{
+header h6{
     margin-left: 20%;
-    font-size: 11px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
 }
-header .t2{
+header h5{
     font-size: 40px;
     display: flex;
     flex-direction: column;
