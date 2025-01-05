@@ -4,6 +4,7 @@ main {
     margin: auto;
 }
 header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 12vh;
     height: 70px;
     text-align: center;
@@ -12,16 +13,22 @@ header {
     border-radius: 10px 10px 0px 0px;
 }
 table {
-    border: 2px solid black;
     height: 150px;
     width: 400px;
 }
 th{
-    border: 2px solid red;
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #307039;
+    border: 2px solid white;
     width: 120px;
 }
 td{
-    border: 2px solid blue;
+    border-radius: 7px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid white;
+    background-color: #4aad58;
     width: 280px;
 }
 div{
@@ -31,10 +38,11 @@ div{
     height: 30px;
 }
 input{
+    border-radius: 8px;
     margin-top: 5px;
     margin-left: 80px;
 }
 button{
-    
+    border-radius: 8pxS;
     border: none;
 }
